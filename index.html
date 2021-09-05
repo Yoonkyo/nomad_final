@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vanilla Challenge</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+
+  <body>
+    <div id="greeting">
+      <form id="login" class="hidden">
+          <h1>What's your name?</h1>
+          <input type="text" required id="name-input" name="name">
+          <input type="submit" value="Enter" />
+      </form>
+      <h1 id="hello"></h1>
+    </div>
+    <div>
+      <h1 id="clock">AM 00:00:00</h1>
+    </div>
+    <div>
+      <form id="todo-form">
+        <input type="text" placeholder="Write a To-do list and Press Enter" required>
+      </form>
+      <ul id=todo-list>
+      </ul>
+    </div>
+    <div id="weather">
+      <span></span>
+      <span></span>
+    </div>
+    <script src="src/timer.js"></script>
+    <script src="src/app.js"></script>
+    <script src="src/todo.js"></script>
+    <script src="src/background.js"></script>
+    <script src="src/geolocation.js"></script>
+  </body>
+</html>
